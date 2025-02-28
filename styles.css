@@ -1,0 +1,190 @@
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color:red;
+}
+
+header {
+  background-color: darkred;
+  color:red;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links ul li {
+  margin-left: 20px;
+}
+
+.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+  color: black;
+}
+
+/* Hero Section */
+@keyframes fadein {
+  0%{opacity: 1;}
+  50% {opacity: 0;}
+  100%{opacity: 1;}
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('/img_l.jpg') no-repeat center center/cover;
+  color: darkred;
+  animation:fadein ease-in-out 7s;
+  animation-iteration-count: infinite;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+@keyframes }
+.cta-button{
+  display:inline-block;
+  padding: 10px 20px;
+  background-color: darkred;
+  color: black;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: red;
+  
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap:10px;
+  align-items:center;
+}
+@keyframes spin{
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes fadeIn {
+  0%{ opacity: 0; }
+  50%{ opacity: 1; }
+  100%{ opacity: 0; }
+
+}
+.gallery-img {
+  max-width:750px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  animation-iteration-count: infinite;
+  animation: fadein 3s ease-in-out infinite, spin 3s infinite;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Content Section */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.jump-link {
+  color: black;
+  text-decoration: none;
+}
+
+.jump-link:hover {
+  text-decoration:underline;
+}
+
+/* Quote Section */
+.quote {
+  background-color:darkred;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.quote blockquote {
+  font-style: italic;
+  margin: 0;
+}
+
+/* Buttons Section */
+.buttons {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Footer Links */
+.footer-links {
+  text-align: center;
+  padding: 20px;
+  background-color: darkred;
+  color: black;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color:red;
+  color:black;
+}
+
+footer address {
+  font-style:oblique;
+}
+
+footer cite {
+  font-style: italic;
+}
