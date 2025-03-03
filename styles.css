@@ -114,13 +114,26 @@ nav {
   padding:4px
 }
 .pic1{
-  max-width: 900px;
-  height:900px;
+  max-width: 700px;
+  height:700px;
   border-radius:15px;
   transition:1s ease;
 }
 .pic1:hover{
   transition: all;
+}
+#caption{
+  text-align: left;
+}
+/*book section*/
+.book{
+  padding:0;
+  margin:10px 10px;
+}
+.book-1{
+display:flex;
+justify-content:center;
+
 }
 /* Content Section */
 .content {
