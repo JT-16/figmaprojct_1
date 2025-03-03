@@ -52,7 +52,7 @@ nav {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: url('/img_n.jpg') no-repeat center; max-width:1700px;
+ max-width:1700px;
   color: brown;
   font-size: bold;
   font-style: oblique;
@@ -175,7 +175,7 @@ nav {
 }
 
 .footer-links a:hover {
-  color:red;
+  color:darkred;
 }
 
 /* Footer */
