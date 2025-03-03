@@ -53,10 +53,8 @@ nav {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: url('/img_n.jpg') no-repeat center center/cover;
+  background: url('/img_n.jpg') no-repeat center; max-width:1700px;
   color: brown;
-  animation:fadein ease-in-out 7s;
-  animation-iteration-count: infinite;
   font-size: bold;
   font-style: oblique;
   font-family:'Times New Roman';
@@ -100,7 +98,6 @@ nav {
   padding: 20px;
   gap: 2px;
 }
-
 .gallery-img {
   max-width:100px;
   height: auto;
@@ -108,18 +105,24 @@ nav {
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
-.pic1{
-  display:flex;
-  justify-content: right;
-  flex-direction: column-reverse;
-  margin: 5px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
 .gallery-img:hover {
   transform: scale(1.05);
 }
-
+.pic{
+  display:flex;
+  justify-content:right;
+  flex-direction: row-reverse;
+  padding:4px
+}
+.pic1{
+  max-width: 900px;
+  height:900px;
+  border-radius:15px;
+  transition:1s ease;
+}
+.pic1:hover{
+  transition: all;
+}
 /* Content Section */
 .content {
   max-width: 800px;
