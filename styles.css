@@ -1,15 +1,15 @@
 body {
-  font-family: 'Arial', sans-serif;font-style: oblique;
+  font-family: 'Arial',;font-style: oblique;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: black;
-  color:red;
+  background-color: palegoldenrod;
+  color:brown;
 }
 
 header {
-  background-color: darkred;
-  color:darkred;
+  background-color:peru;
+  color:silver;
   padding: 10px 0;
 }
 
@@ -49,18 +49,17 @@ nav {
 }
 
 /* Hero Section */
-@keyframes fadein {
-  0%{opacity: 1;}
-  50% {opacity: 0;}
-  100%{opacity: 1;}
-}
+
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: url('/img_l.jpg') no-repeat center center/cover;
-  color: darkred;
+  background: url('/img_n.jpg') no-repeat center center/cover;
+  color: brown;
   animation:fadein ease-in-out 7s;
   animation-iteration-count: infinite;
+  font-size: bold;
+  font-style: oblique;
+  font-family:'Times New Roman';
 }
 
 .hero h1 {
@@ -70,46 +69,53 @@ nav {
 .cta-button{
   display:inline-block;
   padding: 10px 20px;
-  background-color: darkred;
-  color: black;
+  background-color: white;
+  color: brown;
   text-decoration: none;
   border-radius: 7px;
   transition: background-color 0.3s ease;
+  font: bolder;
+  font-family: 'Times New Roman';
 }
-
+.btn{
+  display:inline-block;
+  padding: 10px;
+  margin:auto;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover{
+  background-color:peru;
+}
 .cta-button:hover {
-  background-color: red;
+  background-color:peru ;
   
 }
 
 /* Gallery Section */
 .gallery {
-  display: grid;
+  display: flex;
   justify-content:center;
   flex-wrap:wrap-reverse;
   padding: 20px;
   gap: 2px;
 }
-@keyframes spin{
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-@keyframes fadeIn {
-  0%{ opacity: 0; }
-  50%{ opacity: 1; }
-  100%{ opacity: 0; }
 
-}
 .gallery-img {
-  max-width: 575px;
-  height: 300px;
+  max-width:100px;
+  height: auto;
   margin: 5px;
   border-radius: 10px;
   transition: transform 0.3s ease;
-  animation-iteration-count: infinite;
-  animation: fadein 3s ease-in-out infinite, spin 6s linear infinite;
 }
-
+.pic1{
+  display:flex;
+  justify-content: right;
+  flex-direction: column-reverse;
+  margin: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
 .gallery-img:hover {
   transform: scale(1.05);
 }
@@ -126,7 +132,7 @@ nav {
 }
 
 .jump-link {
-  color: darkred;
+  color: brown;
   text-decoration: none;
 }
 
@@ -136,8 +142,8 @@ nav {
 
 /* Quote Section */
 .quote {
-  background-color:darkred;
-  color: black;
+  background-color:burlywood;
+  color: white;
   padding: 20px;
   text-align: center;
 }
@@ -157,25 +163,24 @@ nav {
 .footer-links {
   text-align: center;
   padding: 20px;
-  background-color: darkred;
-  color: black;
+  background-color: peru;
 }
 
 .footer-links a {
-  color: black;
+  color: white;
   text-decoration: none;
   margin: 0 10px;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+  text-decoration: goldenrod;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color:red;
+  background-color:peachpuff;
   color:black;
 }
 
