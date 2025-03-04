@@ -1,16 +1,19 @@
+/* General Styles */
 body {
-  font-family: 'Arial',;font-style: oblique;
+  font-family: 'Arial', sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: palegoldenrod;
-  color:brown;
-  font:bolder;
+  color: brown;
 }
 
+/* Header and Navigation */
 header {
-  background-color:peru;
-  color:silver;
+  background-color: peru;
+  color: silver;
   padding: 10px 0;
 }
 
@@ -21,7 +24,6 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  
 }
 
 .logo img {
@@ -48,43 +50,55 @@ nav {
 .nav-links ul li a:hover {
   color: goldenrod;
 }
-#heading{
-  text-align: center;
-  margin:70px;
 
+/* Headings */
+#heading {
+  text-align: center;
+  margin: 70px;
 }
-.heading-2{
+
+.heading-2 {
   text-align: center;
   justify-content: center;
 }
 
-.cta-button{
-  display:inline-block;
+/* Buttons */
+.cta-button {
+  display: inline-block;
   padding: 10px 20px;
   background-color: white;
   color: brown;
   text-decoration: none;
   border-radius: 7px;
   transition: background-color 0.3s ease;
-  font: bolder;
-  font-family: 'Times New Roman';
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
 }
-.btn{
-  display:inline-block;
-  font:bolder;
+
+.cta-button:hover {
+  background-color: peru;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: bolder;
   border-radius: 7px;
-  padding:10px 20px;
-  text-decoration:none;
-  transition: background-color 0.5s ease; 
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
   margin-right: 60px;
 }
-.btn:hover{
-  background-color:peru;
-  color:brown;
+
+.btn:hover {
+  background-color: peru;
+  color: brown;
 }
-.cta-button:hover {
-  background-color:peru ;
-  color:white;
+
+/* Hero Section */
+.hero {
+  background: url('/img_n.jpg') no-repeat center center/cover;
+  padding: 195px;
 }
 
 /* Gallery Section */
@@ -94,72 +108,79 @@ nav {
   gap: 2px;
   padding: 20px;
 }
-.image-container{
+
+.image-container {
   text-align: center;
 }
+
 .gallery-img {
-display: flex;
-flex-direction:column;
-flex-shrink: 0;
-border-radius:7px;
-justify-content:space-between;
-width:400px;
-height:400px;
-position:relative;
-padding:50px 0 100px; 
-margin-right:50px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 7px;
+  justify-content: space-between;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  padding: 50px 0 100px;
+  margin-right: 50px;
 }
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
 .gallery-column {
   display: flex;
   float: left;
   width: 33.33%;
   padding: 5px;
 }
-.gallery-row::after{
-  flex:auto;
-  padding:0;
+
+.gallery-row::after {
   content: "";
   clear: both;
   display: table;
 }
-.gallery-img:hover {
-  transform: scale(1.05);
-}
 
-.gallery-i{
-  display:flex;
-  width:1250px;
+.gallery-i {
+  display: flex;
+  width: 1250px;
   height: 790px;
-  border-radius:10px;
+  border-radius: 10px;
   margin-left: 110px;
 }
-.pic{
-  display:flex;
-  float:right;
-  flex-wrap:wrap;
-  padding:4px
+
+.pic {
+  display: flex;
+  float: right;
+  flex-wrap: wrap;
+  padding: 4px;
 }
-.pic-0{
-  float:right;
+
+.pic-0 {
+  float: right;
   max-width: 700px;
-  height:700px;
-  border-radius:15px;
+  height: 700px;
+  border-radius: 15px;
   margin: 2px;
   transition: transform 0.5s ease;
 }
-.pic-0:hover{
+
+.pic-0:hover {
   transform: rotate(0.5s);
 }
 
-.p-organ{
+.p-organ {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   flex-shrink: 0;
-  border-radius:7px;
-  padding:90px;
-  height:auto;
-  width:300px;
+  border-radius: 7px;
+  padding: 90px;
+  height: auto;
+  width: 300px;
 }
+
 /* Content Section */
 .content {
   max-width: 800px;
@@ -171,31 +192,28 @@ margin-right:50px;
   margin-bottom: 20px;
 }
 
-.contact{
+/* Contact Section */
+.contact {
   width: 250px;
   height: 380px;
-  background: linear-gradient(to top, white)170px;
-position: absolute;
-margin:100px;
-}
-.hero{
-  background: url('/img_n.jpg') no-repeat center center/cover;
-  padding:195px;
-
+  background: linear-gradient(to top, white) 170px;
+  position: absolute;
+  margin: 100px;
 }
 
+/* Links */
 .jump-link {
   color: brown;
   text-decoration: none;
 }
 
 .jump-link:hover {
-  color:peru;
+  color: peru;
 }
 
 /* Quote Section */
 .quote {
-  background-color:burlywood;
+  background-color: burlywood;
   color: white;
   padding: 20px;
   text-align: center;
@@ -211,10 +229,7 @@ margin:100px;
   text-align: center;
   padding: 20px;
 }
-.heading-2{
-  text-align: left;
-  background-position: bottom;
-}
+
 /* Footer Links */
 .footer-links {
   text-align: center;
@@ -229,18 +244,19 @@ margin:100px;
 }
 
 .footer-links a:hover {
-  color:darkred;
+  color: darkred;
 }
+
 /* Footer */
 footer {
   text-align: center;
   padding: 10px;
-  background-color:peachpuff;
-  color:whitesmoke;
+  background-color: peachpuff;
+  color: whitesmoke;
 }
 
 footer address {
-  font-style:oblique;
+  font-style: oblique;
 }
 
 footer cite {
