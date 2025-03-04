@@ -47,22 +47,12 @@ nav {
 .nav-links ul li a:hover {
   color: goldenrod;
 }
-
-/* Hero Section */
-.hero {
+#heading{
   text-align: center;
-  padding: 100px 20px;
- max-width:1700px;
-  color: brown;
-  font-size: bold;
-  font-style: oblique;
-  font-family:'Times New Roman';
+  margin:70px;
+
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
 .cta-button{
   display:inline-block;
   padding: 10px 20px;
@@ -92,49 +82,58 @@ nav {
 /* Gallery Section */
 .gallery {
   display: flex;
-  justify-content:center;
-  flex-wrap:wrap-reverse;
-  padding: 20px;
-  gap: 2px;
+  justify-content: center horizontal;
+  flex-wrap: wrap;
+  margin-right:77px;
+  margin-left:28px;
+  margin-top:70px;
+  margin-bottom:12px;
+  gap: 5px;
+
+  
 }
 .gallery-img {
-  max-width:100px;
+  max-width: 225px;
   height: auto;
   margin: 5px;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  justify-items: center;
+  
 }
 .gallery-img:hover {
   transform: scale(1.05);
 }
+
+.gallery-i{
+  display:flex;
+  width:1620px;
+  height: 1000px;
+  border-radius:10px;
+  margin: left 200px;
+  margin: top 30px;
+}
 .pic{
   display:flex;
   justify-content:right;
-  flex-direction: row-reverse;
+  flex-wrap:wrap;
   padding:4px
 }
-.pic1{
+.pic-0{
   max-width: 700px;
   height:700px;
   border-radius:15px;
-  transition:1s ease;
+  margin: 2px;
+  transition: transform 0.5s ease;
 }
-.pic1:hover{
-  transition: all;
+.pic-0:hover{
+  transition: scale(1.05s);
 }
 #caption{
   text-align: left;
+  
 }
-/*book section*/
-.book{
-  padding:0;
-  margin:10px 10px;
-}
-.book-1{
-display:flex;
-justify-content:center;
 
-}
 /* Content Section */
 .content {
   max-width: 800px;
@@ -144,6 +143,18 @@ justify-content:center;
 
 .content p {
   margin-bottom: 20px;
+}
+
+.contact{
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(to top, white)170px;
+position: absolute;
+margin:100px;
+}
+.hero{
+  background: url('/img_n.jpg') no-repeat center center/cover;
+
 }
 
 .jump-link {
@@ -173,7 +184,10 @@ justify-content:center;
   text-align: center;
   padding: 20px;
 }
-
+.heading-2{
+  text-align: left;
+  background-position: bottom;
+}
 /* Footer Links */
 .footer-links {
   text-align: center;
@@ -190,13 +204,12 @@ justify-content:center;
 .footer-links a:hover {
   color:darkred;
 }
-
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 0;
   background-color:peachpuff;
-  color:black;
+  color:whitesmoke;
 }
 
 footer address {
