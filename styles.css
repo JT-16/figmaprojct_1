@@ -73,33 +73,35 @@ nav {
 }
 .btn:hover{
   background-color:peru;
+  color:white
 }
 .cta-button:hover {
   background-color:peru ;
-  
+  color:white;
 }
 
 /* Gallery Section */
 .gallery {
   display: flex;
-  justify-content: center horizontal;
-  flex-wrap: wrap;
-  margin-right:77px;
-  margin-left:28px;
-  margin-top:70px;
-  margin-bottom:12px;
-  gap: 5px;
-
-  
+  justify-content: center;
+  gap: 2px;
 }
 .gallery-img {
-  max-width: 225px;
-  height: auto;
-  margin: 5px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  justify-items: center;
-  
+  width:200px;
+  height:auto;
+}
+.gallery-column {
+  display: flex;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.gallery-row::after{
+  flex:auto;
+  padding:0;
+  content: "";
+  clear: both;
+  display: table;
 }
 .gallery-img:hover {
   transform: scale(1.05);
@@ -115,11 +117,12 @@ nav {
 }
 .pic{
   display:flex;
-  justify-content:right;
+  float:right;
   flex-wrap:wrap;
   padding:4px
 }
 .pic-0{
+  float:right;
   max-width: 700px;
   height:700px;
   border-radius:15px;
@@ -128,10 +131,6 @@ nav {
 }
 .pic-0:hover{
   transition: scale(1.05s);
-}
-#caption{
-  text-align: left;
-  
 }
 
 /* Content Section */
