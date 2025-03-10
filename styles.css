@@ -61,7 +61,7 @@ nav {
 /* Buttons */
 .cta-button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: white;
   color: brown;
   text-decoration: none;
@@ -69,6 +69,7 @@ nav {
   transition: background-color 0.3s ease;
   font-weight: bolder;
   font-family: 'Times New Roman', serif;
+  justify-content: center;
 }
 
 .cta-button:hover {
